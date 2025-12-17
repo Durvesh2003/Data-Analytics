@@ -1,0 +1,285 @@
+'''
+age= 29
+print("My age is",age)
+si = 7.5
+name = "Vishal" 
+z = 5+8j
+print(type(age))
+print(type(si))
+print(type(name))
+print(type(z))
+
+s = "Saraswati College of engeering"
+print(s[5])
+'''
+
+#List
+'''
+my_car = []
+print(my_car)
+my_cars = ["Bmw","Porshe","Swift",500,100]
+print(my_cars)
+print(type(my_cars))
+my_cars[1]="Lambo"
+print(my_cars)
+'''
+
+#Tuple
+
+# Create Shooping Cart with six items and perform basic operations on list
+'''
+Cart= ["Clothes","Soaps","Snacks","Coldrinks","Accesaries","Fruits"]
+print(Cart)
+Cart[1]= "Devices"
+print(Cart)
+print(len(Cart))
+print(Cart)
+Cart.append("Phones")
+print(Cart)
+Cart.remove("Coldrinks")
+print(Cart)
+print(Cart.count("Snacks"))
+'''
+
+# Create To-do List for u r daily routine and perorm list operations
+'''
+List = ["Cooking","dancing","Singing"]
+Today_Activity = input("Enter What to do Next :")
+if Today_Activity not in List:
+    List.append(Today_Activity)
+    print(List)
+# else:
+#     pass
+'''
+
+# Create a list of marks of student and find Sum and Average 
+'''
+Marks = [80,90,70,60,50]
+total = sum(Marks)
+print(total)
+average = total/len(Marks)
+print(average)
+'''
+#Example : Restaurant Menu
+'''
+menu = [
+    ("Pav Bhaji",200,"Veg"),
+    ("pulav",300,"Veg"),
+    ("Egg Curry",400,"Non-Veg"),
+    ]
+for item in menu:
+    print(item)
+'''
+
+# Example 3: Create Transaction record system to stor Transaction_id, amount, Type(debit/Credit)
+'''
+Transaction= [
+    ("BOI-101",2000,"Debit"),
+    ("BOI-102",5000,"Credit"),
+    ("BoI-103",40000,"Debit"),
+    ]
+for Details in Transaction:
+    print(Details)
+'''
+
+# Conditional Statement = # only (if,if.....else ,if.....elif....else)
+
+# Upon positive integer greet a msg Welcome
+'''
+Userinput = int(input("Enter a positie number :" ))
+if(Userinput >0):
+    print("Hey!! u r aree welcome to gaming words")
+else:
+    print("Congreasulation for u r trial")
+'''
+
+'''
+age = int(input("Enter theb age :" ))
+
+if(age>=18):
+    print("u r eligible to vote")
+else:
+    wait = 18 - age
+    print(f" U should wait for {wait} years")
+    print("not eligible")
+'''
+
+#WAP to accept scores of two teams say(ind,pak) and make
+# # a decision who won the match
+'''
+ind = (int(input("Enter score of india"))) 
+pak = (int(input("Enter tghe score of Pak")))
+
+if (ind>pak):
+    print("India won the match")
+elif(ind==pak):
+    print(" Match Tied")
+else:
+    print(" Pakistan won the match")
+'''
+
+# Eg: Accept percentage from user and make decisions about grades
+# here priority goes to higher
+'''
+Marks= int(input("Enter the marks: "))
+if (Marks>=60):
+    print("A grade")
+elif (Marks>=75):
+    print(" O grade")
+elif(Marks>50):
+    print("C grade")
+else:
+    ("failed")
+'''
+# Eg : Online Shopping Discount System
+'''
+Purchase_amt = int (input ("Enter tghe number: "))
+if (Purchase_amt>=5000):
+    print(" You get discount of 15%")
+elif (Purchase_amt>=2000):
+    print(" You get discount of 10%")
+elif (Purchase_amt>=10000):
+    print(" You get discount of 15%")
+else: 
+    print("discount not available")
+'''
+#eg: Temerature based clothing suggestion
+'''
+Temp= int (input ("Temperature readings"))
+if (Temp<10):
+    print("Wear Thick jacket")
+elif (Temp<20):
+    print("Wear simple jacket")
+elif (Temp<30):
+    print("Wear thin jacket")
+else: 
+    print("wear anything")
+'''
+
+# coditional statement
+# to repeat particular block of statement again and ain we use loop .
+# two types of loops
+# For and while
+
+# write a program to prit u r names 10 times
+"""
+for i in range (1,11):
+     print(i,"VILu")
+for j in range(12,25):
+     print(j,end= " ")
+for i in range(10,30,2):
+     print(i,end=" ")
+"""
+# WAP to accept  number from user and display table of it
+
+# number = int(input("Enter the number : "))
+# for i in range (1,11):
+#      print(f"{number} * {i} = {number*i}")
+'''
+start= int(input("Enter the number : "))
+end = int(input("Enter the number : "))
+for n in range(start,end+1):
+    for i in range (1,11):
+        print(f"{n} * {i} = {n*i}")
+'''
+
+# Fibonacci series 
+'''
+a = int(input("enter the number : "))
+x = 0
+y = 1
+sum = 0
+print(x,end=" ")
+print(y,end= " ")
+for i in range(1,a):
+    sum = x + y
+    print(sum,end=" ")
+    x = y
+    y = sum
+'''
+
+# Patterns
+'''
+for i in range(1,6):
+    for j in range(1,i+1):
+        print("*",end = " ")
+    print()
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        print(j,end = " ")
+    print()
+
+for i in range(1,6):
+    for j in range(1, 7-i):
+        print(j,end = " ")
+    print()
+
+# sum of first 10 natural numbers
+sum = 0
+for i in range (1,11):
+    sum = sum + i
+print(sum)
+
+# WAp too get even nuimbers between 1 t0 100
+
+for i in range(1,101):
+    if i%2 == 0:
+        print(i,end = " ")
+'''
+
+# WHile
+
+i = 1 
+while(i<=10):
+    print("Hello World")
+    i = i+1
+
+i = 1
+n =5  
+while(i<=10):
+    print(i*n)
+    i = i+1
+
+# WaP to reverse a given number and palindrome both 
+'''
+n = int(input("Enter a number: "))
+rev = 0
+temp = n
+while(n>0):
+    rem = n%10
+    rev = rev*10 + rem
+    n = n//10
+    print(rev)
+# if(temp == rev):
+#     print(temp, "is palindrome")
+# else:
+#     print("not")
+'''
+
+
+# input = 153 , o/p = 9
+
+sum = 0
+n = int(input("enter a number : "))
+while(n>0):
+    rem = n%10
+    sum = sum + rem
+    n = n//10
+print(sum)
+
+# armstrong number
+sum = 0
+n = int(input("enter a number : "))
+temp = n
+while(n>0):
+    rem = n%10
+    sum = sum + rem**3
+    n = n//10
+print(sum)
+if (temp == sum ):
+    print("armstrng")
+else:
+    print("not armstrong")
+
+
